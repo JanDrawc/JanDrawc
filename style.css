@@ -1,0 +1,258 @@
+body {
+    background-color: #0a0a0a;
+    color:rgb(234, 236, 238);
+    padding: 5%;
+    padding-top: 30%;
+    animation-name: body;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    
+
+}
+@keyframes body {
+    from {padding-top: 30%;}
+    to {padding-top: 10%;}
+
+}
+
+
+
+a:link {
+    color:rgb(234, 236, 238);
+    text-decoration:none;
+    font-size:120%;
+    padding: 5px;
+    transition-duration: 1s;
+}
+
+a:visited {
+    color:rgb(234, 236, 238);
+    font-size:120%;
+    text-decoration: none;
+
+}
+
+a:hover {
+    scale: 1.1;
+    font-size:120%;
+    text-decoration: none;
+    scale: 1.1;
+    background-color: rgb(234, 236, 238);
+    color:#0a0a0a;
+    transition-duration: 0s;
+    
+}
+
+a:active {
+    scale: 0.9;
+    font-size:120%;
+    text-decoration: none;
+    scale: 0.9;
+}
+
+.toplinks {
+    position: fixed;
+    float:right;
+    right: 5%;
+    top: 0px;
+    max-width: 50%;
+    align-items: end;
+    padding: 15px;
+    padding-top: 50px;
+    background-image: linear-gradient(to top,#0a0a0a,#0a0a0ac5);
+   
+    z-index: 100;
+}
+
+.jan {
+    font-size: 400%;
+    position: fixed;
+    float: left;
+    top: -100px;
+    left: 5%;
+    white-space: nowrap;
+    padding: 30px;
+    padding-top: 80px;
+    background-image: linear-gradient(to top,#0a0a0a,#0a0a0ac5);
+}
+
+.miniheader {
+    position: fixed;
+    top: 0;
+    height: auto;
+    overflow: visible;
+    z-index: 100;
+}
+
+.pagetitle {
+    
+    position:relative;
+    top: -200px;
+    width: 100%;
+
+
+}
+
+.bunchof {
+    position: absolute;
+    align-items: end;
+    float: right;
+    right: 50%;
+    z-index: 101;
+    animation: bunchof 3s forwards;
+    font-family: monospace;
+}
+@keyframes bunchof {
+    0% {right: 47%; color:#0a0a0a}
+    50% {color: rgb(234, 236, 238)}
+    70% {right: 50%; transform:scale3d(100%,100%,100%); color: rgb(234, 236, 238);}
+    100% {right: 90%; transform:scale3d(200%,0%,100%); color:#0a0a0a}
+}
+
+.pagetitlein {
+    position: relative;
+    float: left;
+    left: 50%;
+    top: 15px;
+    padding: 5px;
+    font-style: italic;
+    font-size:larger;
+    animation: pagetitlein 3s forwards;
+
+}
+@keyframes pagetitlein {
+    0% {left: 47%; color:#0a0a0a}
+    50% {color: rgb(234, 236, 238)}
+    70% {left: 50%; transform:scale3d(100%,100%,100%); color: rgb(234, 236, 238);}
+    100% {left: 90%; transform:scale3d(200%,0%,100%); color:#0a0a0a}
+}
+
+.specialheader {
+    height:fit-content;
+    z-index: 100;
+}
+
+
+
+.specialfooter {
+    position: relative;
+    position: fixed;
+    bottom: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(0deg,rgba(10,10,10,1) 0%, rgba(10,10,10,0) 5%, rgba(10,10,10,0) 95%, rgba(10,10,10,1) 100%);
+    pointer-events: none;
+    z-index: 50;
+
+}
+
+.gridmasonry {
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows:auto;
+    grid-auto-rows: auto;
+    gap: 1vw;
+    
+}
+
+.gridmasonryimagecontainer {
+    width: 100%;
+    height:fit-content;
+    vertical-align:middle;
+    transition-duration: 1s;
+    padding: 1%;
+    z-index: 1;
+    align-self: center;
+    
+}
+
+
+
+
+
+.gridmasonryimagecontainer:hover{
+    
+    background-color: rgb(234, 236, 238);
+    color: #0a0a0a;
+    padding: 1%;
+    transition-duration: 0.2s;
+    z-index: 50;
+    scale: 1.05;
+}
+
+
+
+
+.gridmasonryimage {
+    max-width: 100%;
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+
+
+
+
+
+.gridmasonrytitle {
+    text-align: center;
+    
+}
+
+.gridmasonrymodal {
+    display: none;
+    position: fixed; 
+    z-index: 105;
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: none;
+    background-color: #0a0a0ae7;
+    text-align: center;
+
+
+}
+.gridmasonrymodal-content {
+    max-width: 99%;
+    max-height: 99%;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+.gridmasonrymodal-content:hover,
+.gridmasonrymodal-content:active {
+    cursor: none;
+}
+
+.gridbandlab {
+    width: 100%;
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows:auto;
+    grid-auto-rows: auto;
+    gap: 1vw;
+}
+
+.bandlabalbum {
+    width:100%;
+    min-width: 400px;
+    height: 40vh;
+    min-height: 300px;
+    border: none;
+    transition-duration: 1s;
+
+   
+    filter: grayscale(1) invert(0.8) contrast(1.5);
+}
+.bandlabalbum:hover{
+    scale: 1.2;
+    z-index: 101;
+    transition-duration: 0.5s;
+    filter: grayscale(1) invert(0.82) contrast(1.5);
+
+}

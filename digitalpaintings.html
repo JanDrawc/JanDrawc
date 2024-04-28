@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>digital paintings</title>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="js.js"></script>
+    <special-header></special-header>
+    <meta http-equiv="imagetoolbar" content="no" />
+</head>
+<body>
+
+    <p style="padding: 1%;">Click on image to zoom.</p>
+    
+    <div id="modal" class="gridmasonrymodal" onclick="closemodal()">
+        <img class="gridmasonrymodal-content" id="modal-content">
+    </div>
+
+    <div id="gridmasonry" class="gridmasonry">
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer" >
+            <img src="https://cdna.artstation.com/p/assets/images/images/065/339/066/large/jan-drawc-ritual-sacrifice-1500.jpg?1690134207" class="gridmasonryimage" onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Ritual Sacrifice</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/060/158/473/large/jan-drawc-mamori-warrior-1500.jpg?1677948076" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Mamori Warrior</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/059/658/123/large/jan-drawc-hut-1350.jpg?1676885547" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Dark Hut</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdna.artstation.com/p/assets/images/images/059/221/504/large/jan-drawc-lizard-keeper-2k.jpg?1675896456" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Lizard Keeper</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdna.artstation.com/p/assets/images/images/058/402/892/large/jan-drawc-booze-bringer-1500-1.jpg?1674073133" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Booze Bringer</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdna.artstation.com/p/assets/images/images/051/375/980/large/jan-drawc-touchdown-1k-1.jpg?1657132492" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Touchdown</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdna.artstation.com/p/assets/images/images/045/339/560/large/jan-drawc-the-lake-1000.jpg?1642499779" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">The Lake</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/045/639/653/large/jan-drawc-space-rest-1080.jpg?1671666784" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Travel Through the Universe</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/048/072/287/large/jan-drawc-great-enemy-felled-1k.jpg?1649147825" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">GreatEnemy Felled</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdna.artstation.com/p/assets/images/images/041/000/904/large/jan-drawc-the-sea-peoples-3500.jpg?1630484224" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Sea Peoples</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdna.artstation.com/p/assets/images/images/030/057/892/large/jan-drawc-proko-figurestudy-small.jpg?1604958703" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Figure Study</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdna.artstation.com/p/assets/images/images/036/170/168/large/jan-drawc-witches.jpg?1616926941" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Witch's Liar</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdna.artstation.com/p/assets/images/images/029/917/398/large/jan-drawc-final-smaller.jpg?1604958734" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Naiad Queen</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdna.artstation.com/p/assets/images/images/038/433/924/large/jan-drawc-lovecraft-see-men.jpg?1623089744" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Horror from the Depths</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/037/762/625/large/jan-drawc-red-gate-med.jpg?1621266657" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Red Gate</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdna.artstation.com/p/assets/images/images/036/247/562/large/jan-drawc-doner-kebab.jpg?1617129247" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Still Life</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/029/286/259/large/jan-drawc-final.jpg?1597066385" class="gridmasonryimage"onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Cold Front Malfunction</p>
+        </div>
+    </div>
+
+   
+
+<special-footer></special-footer>
+</body>
+</html>
