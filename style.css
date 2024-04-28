@@ -17,6 +17,12 @@ body {
 
 }
 
+p {
+    font-size: 1vw;
+}
+
+
+
 
 
 a:link {
@@ -148,6 +154,8 @@ a:active {
 
 }
 
+
+
 .gridmasonry {
     max-width: 90vw;
     display: grid;
@@ -157,6 +165,7 @@ a:active {
     gap: 1vw;
     
 }
+
 
 .gridmasonryimagecontainer {
     width: 100%;
@@ -256,3 +265,43 @@ a:active {
     filter: grayscale(1) invert(0.82) contrast(1.5);
 
 }
+
+@media (max-width: 1000px) {
+    .jan {
+        font-size: 800%;
+        position: fixed;
+        float: left;
+        top: -100px;
+        left: 5%;
+        white-space: nowrap;
+        padding: 30px;
+        padding-top: 80px;
+        background-image: linear-gradient(to top,#0a0a0a,#0a0a0ac5);
+    }
+    p {
+        font-size: 5vw; 
+    }
+    a:link, a:visited, a:hover, a:active  {
+       font-size: 300%;
+       padding: 5vh;
+       padding-right: 5vw;
+     
+    }
+    .gridmasonry {
+        max-width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows:auto;
+        grid-auto-rows: auto;
+        gap: 1vw;
+        
+    }
+    body {
+        padding-top: 50vh;
+    }
+    @keyframes body {
+        from {padding-top: 50vh;}
+        to {padding-top: 40vh;}
+    
+    }
+  }
