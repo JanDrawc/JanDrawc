@@ -2,14 +2,43 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>oil paintings</title>
+    <title>Oil Paintings</title>
     <link href="style.css" rel="stylesheet">
     <script defer src="js.js"></script>
     <special-header></special-header>
 </head>
 <body>
     
-    <h1>paintings</h1>
+    <p style="padding: 1%;">Click on image to zoom.</p>
+    
+    <div id="modal" class="gridmasonrymodal" onclick="closemodal()">
+        <img class="gridmasonrymodal-content" id="modal-content">
+    </div>
+    
+    <div id="gridmasonry" class="gridmasonry">
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer" >
+            <img src="https://cdna.artstation.com/p/assets/images/images/055/632/250/large/jan-drawc-img-0431-1200p.jpg?1667399834"class="gridmasonryimage" onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Saturday Night Still Life</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer" >
+            <img src="https://cdnb.artstation.com/p/assets/images/images/055/367/813/large/jan-drawc-img-0251-1500.jpg?1666785583"class="gridmasonryimage" onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Morning Coffe</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer" >
+            <img src="https://cdnb.artstation.com/p/assets/images/images/051/078/735/large/jan-drawc-avenger-titan-1080.jpg?1656413481"class="gridmasonryimage" onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Avenger Titan</p>
+        </div>
+        <div id="gridmasonryimagecontainer" class="gridmasonryimagecontainer" >
+            <img src="https://cdna.artstation.com/p/assets/images/images/056/938/502/large/jan-drawc-img-0545-1080.jpg?1670440288"class="gridmasonryimage" onclick="fullimage(this)">
+            <p class="gridmasonrytitle">Apple in Plastic</p>
+        </div>
+        
+        
+        
+
+        
+        </div>
+    </div>
 
 <special-footer></special-footer>
 </body>
