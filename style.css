@@ -64,7 +64,7 @@ a:active {
     float:right;
     right: 5%;
     top: 0px;
-    max-width: 50%;
+    max-width: 80%;
     align-items: end;
     padding: 15px;
     padding-top: 50px;
@@ -125,7 +125,7 @@ a:active {
     top: 15px;
     padding: 5px;
     font-style: italic;
-    font-size:larger;
+    font-size:300%;
     animation: pagetitlein 3s forwards;
 
 }
@@ -270,7 +270,26 @@ a:active {
     margin: auto;
 }
 
+.hamburger {
+    display: none;
+    position: sticky;
+    float:right;
+    font-size: 500%;
+    right: 10%;
+    top: 5%;
+    max-width: 80%;
+    align-items: end;
+    padding: 15px;
+    padding-top: 0px;
+    margin-top:50px;
+    background-image: linear-gradient(to top,#303030,#0a0a0ac5);
+    z-index: 150;
+}
+
 @media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+    }
     .jan {
         font-size: 800%;
         position: fixed;
@@ -324,13 +343,12 @@ a:active {
     }
     .toplinks {
         position:relative;
-        left: 5vw;
         white-space: pre;
         padding: 20px;
         display:inline-block;
         width: 50vw;
-        
-        
+        display: none;
+
     }
     .miniheader {
         position: absolute;
@@ -350,6 +368,9 @@ a:active {
         position: relative;
         vertical-align: middle;
     }
+
+        
+
 
   
   }
