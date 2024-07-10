@@ -159,6 +159,7 @@ a:active {
 
 .gridmasonry {
     max-width: 90vw;
+    width: 90vw;
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     grid-template-rows:auto;
@@ -222,6 +223,7 @@ a:active {
     overflow: none;
     background-color: #0a0a0ae7;
     text-align: center;
+    align-content: center;
 }
 .gridmasonrymodal-content {
     max-width: 99%;
@@ -365,7 +367,7 @@ a:active {
         background-color: #0a0a0afa;
     }
     .gridmasonrymodal-content {
-        position: relative;
+        position:absolute;
         vertical-align: middle;
     }
 
@@ -373,4 +375,10 @@ a:active {
 
 
   
+  }
+
+  .gamecanvas {
+    background: #303030;
+    display: block;
+    margin: 0 auto;
   }
